@@ -1,0 +1,26 @@
+// :Stdheader
+#include <string.h>
+char *ft_strdup(const char  *s)
+{
+char *m;
+size_t i;
+
+m = (char *)malloc((strlen(s) * sizeof(char));
+if (m == NULL)
+return (0);
+i = 0;
+while(s[i])
+{
+m[i] = s[i];
+i++;
+}
+m[i] = '\0';
+return (m);
+}
+
+int main(void)
+{
+const char s[] = "Sophia is cool";
+
+printf("mine: %s\n", ft_strdup(s));
+}
